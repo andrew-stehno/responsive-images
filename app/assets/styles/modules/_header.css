@@ -1,0 +1,14 @@
+.site-header {
+    background-color: $mainBlue;
+
+   &__title {
+       padding-left: 20px;
+   }
+
+   &__primary-nav li{
+    list-style: none;
+    display: inline-block;
+   }
+
+}
+
