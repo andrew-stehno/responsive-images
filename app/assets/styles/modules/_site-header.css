@@ -1,0 +1,32 @@
+.site-header {
+
+  &__title {
+    padding-left: 20px;
+    float: left;
+}
+
+&__primary-nav {
+    float: right;
+    padding-right: 20px;
+    transform: translateY(25%);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  li:after {
+      content: " |";
+  }
+
+  li:last-child:after {
+      content: "";
+  }
+
+  a {
+      text-decoration: none;
+      color: $mainBlue;
+      font-size: 1.25rem;
+  }
+}
