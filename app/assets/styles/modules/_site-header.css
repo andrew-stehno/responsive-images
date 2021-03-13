@@ -1,50 +1,54 @@
 .site-header {
+  &__title {
+    text-align: center;
 
-li {
+    @mixin atMedium {
+      padding-left: 20px;
+      float: left;
+    }
+  }
+
+  &__header--menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__primary-nav {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+      float: right;
+      padding-right: 20px;
+      transform: translateY(15%);
+    }
+  }
+
+  li {
     list-style: none;
     display: inline-block;
   }
 
   li:after {
-      content: " |";
+    content: " |";
   }
 
   li:last-child:after {
-      content: "";
+    content: "";
   }
 
   a {
-      text-decoration: none;
-      color: $mainBlue;
-  }
-
- @mixin atSmall {
-     &__title {
-         padding-left: 20px;
-         float: left;
-     }
-
-     &__primary-nav {
-         font-size: 1.25rem;
-     }
-
- }
-
-  @mixin atMedium {
-    &__title {
-        padding-left: 20px;
-        float: left;
-    }
-    
-    &__primary-nav {
-        float: right;
-        padding-right: 20px;
-        transform: translateY(15%);
-    }
-
-    a {
-        font-size: 1.5rem;
-    }
+    text-decoration: none;
+    color: $mainBlue;
+    font-size: 1.5rem;
   }
 
 }
