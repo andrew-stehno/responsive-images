@@ -1,16 +1,5 @@
 .site-header {
 
-  &__title {
-    padding-left: 20px;
-    float: left;
-}
-
-&__primary-nav {
-    float: right;
-    padding-right: 20px;
-    transform: translateY(25%);
-}
-
 li {
     list-style: none;
     display: inline-block;
@@ -27,6 +16,35 @@ li {
   a {
       text-decoration: none;
       color: $mainBlue;
-      font-size: 1.25rem;
   }
+
+ @mixin atSmall {
+     &__title {
+         padding-left: 20px;
+         float: left;
+     }
+
+     &__primary-nav {
+         font-size: 1.25rem;
+     }
+
+ }
+
+  @mixin atMedium {
+    &__title {
+        padding-left: 20px;
+        float: left;
+    }
+    
+    &__primary-nav {
+        float: right;
+        padding-right: 20px;
+        transform: translateY(15%);
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+  }
+
 }
