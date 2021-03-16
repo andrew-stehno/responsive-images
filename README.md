@@ -38,9 +38,17 @@ The following NPM packages were used during development:
 - postcss-nested
 - postcss-simple-vars
 - autoprefixer
+- clean-webpack-plugin
+- mini-css-extract-plugin
+- html-webpack-plugin
+- fs-extra
+- @babel/core
+- @babel/preset-env
+- babel-loader
 
 ## Dependencies
 
 - normalize.css
+- css-minimizer-webpack-plugin
 
 ## 🍻
